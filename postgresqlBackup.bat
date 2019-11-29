@@ -1,11 +1,11 @@
   @echo off
-   ::Change this values
+   ::Change this variables
    set HOST=<HOST>
    set PORT=<PORT>
    set DBNAME=<DBNAME>
    set USER=<USER>
    set PSSWD=<PASSWORD>
-   set PATH=<PATH>
+   set FILENAME=<FILENAME>
    
    for /f "tokens=1-3 delims=/ " %%A in ("%date%") do (
      set day=%%A
@@ -16,7 +16,7 @@
    set datestr=%year%%month%%day%
    echo datestr is %datestr%
     
-   set BACKUP_FILE=%PATH%_%datestr%.backup
+   set BACKUP_FILE=BACKUPS\%FILENAME%_%datestr%.backup
    echo backup file name is %BACKUP_FILE%
    SET PGPASSWORD=%PSSWD%
    echo on
