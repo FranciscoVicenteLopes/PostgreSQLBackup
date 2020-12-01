@@ -17,6 +17,7 @@
 	- Create a sub directory called "backups"
 	- Copy the batch file into the "postgresqlbackups"
 	- Copy the postgressql "bin" folder in "postgresqlbackups"
+	- Change the variables in the batch file
 
 Now you just need to execute the batch file or use it in a planned task.
 
